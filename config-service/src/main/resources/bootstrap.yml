@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          #url del repositorio donde esta ubicado los proyectos (con ello el fichero yml de ellos)
+          uri: https://github.com/marianoldm/bootCamp.git
+          # especificamos donde esta los archivos de configuracion de nuestros proyectos
+          searchPaaths: config-data
+          #variables de entorno para cuando subamos no este en el repositorio a la vista el user y el pass
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+security:
+  user:
+    name: root
+    password: s3cr3t
