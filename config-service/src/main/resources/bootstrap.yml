@@ -10,9 +10,6 @@ spring:
           uri: https://github.com/marianoldm/bootCampConfigService.git
           # especificamos donde esta los archivos de configuracion de nuestros proyectos
           searchPaths: config-data
-          #variables de entorno para cuando subamos no este en el repositorio a la vista el user y el pass
-          #username: marianoldm
-          #password: mla04cam%
   security:
     user:
       name: root
