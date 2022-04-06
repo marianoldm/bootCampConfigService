@@ -7,6 +7,9 @@ server:
 spring:
   application:
     name: customer-service-new
+  config:
+        activate:
+            on-profile: test
   h2:
     console:
       enabled: true
