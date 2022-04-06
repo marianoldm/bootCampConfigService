@@ -6,7 +6,11 @@ spring:
   application:
     name: springRESTclemen
   h2:
-    console: true
+    console:
+      settings:
+        web-allow-others: false
+        trace: false
+      path: /h2-console
     
   # ===============================
   # DB
